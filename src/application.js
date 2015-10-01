@@ -20,6 +20,11 @@ $(document).ready(function() {
 
   $('#power_save').change(function() {
     power.switch_power()
+    if(power.mode == false) {
+      $('#central').css('border', 'solid #ff9933');
+    } else {
+      $('#central').css('border', 'solid #99ccff');
+    };
     if(thermostat.temperature > 25) {
       thermostat.temperature = 25;
       $("#temp").text(thermostat.temperature);

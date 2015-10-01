@@ -37,12 +37,37 @@
   margin-right: -50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 330px;
-  height: 330px;
-  border: solid black;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   border-width: 2px;
+  border: solid #99ccff;
 }
+
+#plus_button {
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 65%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  top: 70%;
+}
+
+#minus_button {
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 35%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  bottom: 13%;
+}
+
+
+
 
 
 /*.city {

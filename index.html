@@ -7,11 +7,11 @@
   </head>
 
   <body>
-  <div id="background">
+ <!--  <div id="background">
       <img src="public/images/london.jpg" class="stretch" alt="" />
-  </div>
+  </div> -->
 
-  <div id="weather_box" style="color: white">
+  <div id="weather_box">
     <div style="text-align: right">
       <span class="weather"> Weather</span> <br>
       <span class="city">City</span> 
@@ -21,18 +21,23 @@
   </div>
 
   <div id="central"> 
-    <div><span id="temp">20</span></div>
 
-    <div style="display:inline-block"><a href="#" id="up"> UP </a></div>
-    <div style="display:inline-block; width:5px; height:5px"></div>
-    <div style="display:inline-block"><a href="#" id="down"> DOWN </a></div>
+    <div id="plus_button">
+      <a href="#" id="up"> <img src="public/images/plus-button.svg"/> </a>
+    </div>
+    <div style="height: 220px; margin-top: 20px"><span id="temp">20</span></div>
+    <div id="minus_button">
+      <a href="#" id="down"> <img src="public/images/minus-button.svg"/> </a>
+    </div>
 
-    <form action="">
-      <input type="checkbox" id="power_save" checked >Power save mode
-    </form>
-
-    <a href="#" id="reset"> Reset temperature </a>
   </div>
+
+  <form action="" style="margin-top: 40px">
+    <input type="checkbox" id="power_save" checked >Power save mode
+  </form>
+
+  <a href="#" id="reset"> Reset temperature </a>
+
   </body>
 
   <script src="lib/jquery.js"></script>

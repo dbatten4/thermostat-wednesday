@@ -18,12 +18,14 @@ $(document).ready(function() {
     $('#central').css('background-color', thermostat.colour);
   });
 
-  $('#power_save').change(function() {
+  $('#power_save').click(function() {
     power.switch_power()
     if(power.mode == false) {
       $('#central').css('border', 'solid #ff9933');
+      $('#central').css('border-width', '10px');
     } else {
       $('#central').css('border', 'solid #99ccff');
+      $('#central').css('border-width', '10px');
     };
     if(thermostat.temperature > 25) {
       thermostat.temperature = 25;
